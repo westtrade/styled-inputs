@@ -8,10 +8,6 @@ module.exports = () => () => {
 		restrict: 'AEM',
 		// require: 'ngModel',
 		link: (scope, element, attrs) => {
-			if ('item' in scope && scope.item.selected) {
-				element.attr('checked', true); //TODO Remove hack, not work for ngModel
-			}
-
 			styler(element);
 		}
 	}
